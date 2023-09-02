@@ -12,24 +12,19 @@ const tableBody = document.getElementById("table-body");
 for (let i = 0; i < data.length; i++) {
   const row = document.createElement("tr");
   const th = document.createElement("th");
+  const tdName = document.createElement("td");
+  const tdTimer = document.createElement("td");
 
   th.setAttribute("scope", "row");
   th.textContent = (i + 1).toString();
-
-  const tdName = document.createElement("td");
   tdName.textContent = data[i][0];
-
-  const tdId = document.createElement("td");
-  tdId.id = data[i][0];
+  tdTimer.id = data[i][0];
 
   row.appendChild(th);
   row.appendChild(tdName);
-  row.appendChild(tdId);
-
+  row.appendChild(tdTimer);
   tableBody.appendChild(row);
 }
-
-console.log(data);
 
 function updateTimer(startTime) {
   const timeDiff = new Date() - startTime;
@@ -47,9 +42,7 @@ function updateTimer(startTime) {
 function updateAll() {
   for (let i = 0; i < data.length; i++) {
     const tdTimer = document.getElementById(data[i][0]);
-    if (data[i][0] == "Vinay") {
     tdTimer.textContent = updateTimer(data[i][1]);
-    }
   }
 }
 
