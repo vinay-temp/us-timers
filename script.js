@@ -20,6 +20,12 @@ for (let i = 0; i < data.length; i++) {
   th.setAttribute("scope", "row");
   th.textContent = (i + 1).toString();
   tdName.textContent = data[i][0];
+  if (i == 0) {
+    tdName.textContent += "👑";
+  }
+  if (i == data.length - 1) {
+    tdName.textContent += "👑";
+  }
   tdTimer.id = data[i][0];
 
   row.appendChild(th);
