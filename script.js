@@ -23,9 +23,9 @@ for (let i = 0; i < data.length; i++) {
   if (i == 0) {
     tdName.textContent += "👑";
   }
-  if (i == data.length - 1) {
-    tdName.textContent += "👑";
-  }
+  // if (i == data.length - 1) {
+  //   tdName.textContent += "👑";
+  // }
   tdTimer.id = data[i][0];
 
   row.appendChild(th);
