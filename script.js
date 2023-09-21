@@ -1,10 +1,10 @@
 // (Year, Month (0-11), Day, Hour, Minute, Second)
 const data = [
-  ["Vinay", new Date(2023, 8, 17, 3, 21, 00)],
+  ["Vinay", new Date(2023, 8, 17, 3, 21, 0)],
   ["Ajay", new Date(2023, 8, 20, 2, 0, 0)],
   ["Priyam", new Date(2023, 8, 9, 3, 30, 0)],
-  ["Shivanshu", new Date(2023, 8, 19, 15, 00, 0)],
-  ["Harshit", new Date(2023, 7, 25, 19, 18, 0)],
+  ["Shivanshu", new Date(2023, 8, 19, 15, 0, 0)],
+  ["Harshit", new Date(2023, 8, 19, 18, 0, 0)],
   ["Shukla", new Date(2023, 8, 13, 21, 0, 0)],
   ["Anubhav", new Date(2023, 8, 13, 21, 0, 0)],
 ].sort((a, b) => {
