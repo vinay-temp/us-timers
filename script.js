@@ -23,7 +23,7 @@ for (let i = 0; i < data.length; i++) {
   th.textContent = (i + 1).toString();
   tdName.textContent = data[i][0];
   if (i == 0) {
-    tdName.textContent += " 👑";
+    tdName.textContent += " 👑 KING 👑";
   }
   if (i == data.length - 1) {
     tdName.textContent += " Mutthal";
