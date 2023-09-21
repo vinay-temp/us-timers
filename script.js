@@ -44,7 +44,7 @@ function updateTimer(startTime) {
   const hours = Math.floor(mins / 60);
   const days = Math.floor(hours / 24);
 
-  return `${days} days ${hours % 24} hours ${mins % 60} mins ${secs % 60} secs`;
+  return `${days} days ${hours % 24} hrs ${mins % 60} mins ${secs % 60} secs`;
 }
 
 function updateAll() {
